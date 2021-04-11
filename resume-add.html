@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Разместите вакансию или создайте свое онлайн резюме с помощью MyJobSueta!">
+    <meta name="keywords" content="">
+
+    <title>Создать резюме</title>
+
+    <!-- Styles -->
+    <link href="assets/css/app.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:100,300,400,500,600,800%7COpen+Sans:300,400,500,600,700,800%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.ico">
+  </head>
+
+  <body class="nav-on-header">
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <div class="container">
+
+        <!-- Logo -->
+        <div class="pull-left">
+          <a class="navbar-toggle" href="#" data-toggle="offcanvas"><i class="ti-menu"></i></a>
+
+          <div class="logo-wrapper">
+            <a class="logo" href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+            <a class="logo-alt" href="index.html"><img src="assets/img/logo-alt.png" alt="logo-alt"></a>
+          </div>
+
+        </div>
+        <!-- END Logo -->
+
+        <!-- User account -->
+        <div class="pull-right user-login">
+          <a class="btn btn-sm btn-primary" href="user-login.html">Логин</a> / <a href="user-register.html">Регистрация</a>
+        </div>
+        <!-- END User account -->
+
+        <!-- Navigation menu -->
+        <ul class="nav-menu">
+          <li>
+            <a class="active" href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="#">Вакансии</a>
+            <ul>
+              <li><a href="job-list-1.html">Поиск работы</a></li>
+              <li><a href="job-detail.html">Информация о работе</a></li>
+              <li><a href="job-add.html">Добавить вакансию</a></li>
+              <li><a href="job-manage.html">Управление вакансиями</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Резюме</a>
+            <ul>
+              <li><a href="resume-list.html">Поиск резюме</a></li>
+              <li><a href="resume-detail.html">Информация о резюме</a></li>
+              <li><a href="resume-add.html">Создать резюме</a></li>
+              <li><a href="resume-manage.html">Управлять резюме</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Компании</a>
+            <ul>
+              <li><a href="company-list.html">Поиск компании</a></li>
+              <li><a href="company-detail.html">Информация о компании</a></li>
+              <li><a href="company-add.html">Зарегистрировать компанию</a></li>
+              <li><a href="company-manage.html">Управление компаниями</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Страницы</a>
+            <ul>
+              <li><a href="page-about.html">О нас</a></li>
+              <li><a href="page-contact.html">Контакты</a></li>
+              <li><a href="page-faq.html">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- END Navigation menu -->
+
+      </div>
+    </nav>
+    <!-- END Navigation bar -->
+
+    <form action="#">
+
+      <!-- Page header -->
+      <header class="page-header">
+        <div class="container page-name">
+          <h1 class="text-center">Добавьте своё резюме</h1>
+          <p class="lead text-center">Создайте свое резюме и разместите его в Интернете.</p>
+        </div>
+
+        <div class="container">
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-4">
+              <div class="form-group">
+                <input type="file" class="dropify" data-default-file="assets/img/avatar.jpg">
+                <span class="help-block">Пожалуйста, выберите фотографию профиля 4:6.</span>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-8">
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" placeholder="Имя">
+              </div>
+              
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Заголовок (например, Front-end разработчик)">
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control" rows="3" placeholder="Краткое описание о вас"></textarea>
+              </div>
+
+              <hr class="hr-lg">
+
+              <h6>Информация</h6>
+              <div class="row">
+
+                <div class="form-group col-xs-12 col-sm-6">
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
+                    <input type="text" class="form-control" placeholder="Место регистрации">
+                  </div>
+                </div>
+
+                <div class="form-group col-xs-12 col-sm-6">
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-addon"><i class="fa fa-globe"></i></span>
+                    <input type="text" class="form-control" placeholder="Адрес веб-страницы">
+                  </div>
+                </div>
+
+                <div class="form-group col-xs-12 col-sm-6">
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-addon"><i class="fa fa-usd"></i></span>
+                    <input type="text" class="form-control" placeholder="Зарпалата">
+                    <span class="input-group-addon">Часовая</span>
+                  </div>
+                </div>
+
+                <div class="form-group col-xs-12 col-sm-6">
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-addon"><i class="fa fa-birthday-cake"></i></span>
+                    <input type="text" class="form-control" placeholder="Возраст">
+                    <span class="input-group-addon">Лет</span>
+                  </div>
+                </div>
+
+                <div class="form-group col-xs-12 col-sm-6">
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                    <input type="text" class="form-control" placeholder="Номер телефона">
+                  </div>
+                </div>
+
+                <div class="form-group col-xs-12 col-sm-6">
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                    <input type="text" class="form-control" placeholder="Email">
+                  </div>
+                </div>
+
+              </div>
+
+              <hr class="hr-lg">
+
+              <h6>Тэги</h6>
+              <div class="form-group">
+                <input type="text" value="HTML,CSS,Javascript" data-role="tagsinput" placeholder="Тэг">
+                <span class="help-block">Введите тэг</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="button-group">
+            <div class="action-buttons">
+
+              <div class="upload-button">
+                <button class="btn btn-block btn-gray">Загрузить резюме</button>
+                <input type="file">
+              </div>
+
+              <div class="upload-button">
+                <button class="btn btn-block btn-primary">Загрузить обложку</button>
+                <input id="cover_img_file" type="file">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- END Page header -->
+
+
+      <!-- Main container -->
+      <main>
+
+        <!-- Education -->
+        <section class=" bg-alt">
+          <div class="container">
+
+            <header class="section-header">
+              <h2>Образование</h2>
+            </header>
+            
+            <div class="row">
+
+              <div class="col-xs-12">
+                <div class="item-block">
+                  <div class="item-form">
+  
+                    <button class="btn btn-danger btn-float btn-remove"><i class="ti-close"></i></button>
+
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <div class="form-group">
+                          <input type="file" class="dropify" data-default-file="assets/img/logo-default.png">
+                          <span class="help-block">Логотип образовательного учреждения</span>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-8">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Образование">
+                        </div>
+
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Направление">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Название школы / ВУЗ / СУЗ">
+                        </div>
+
+                        <div class="form-group">
+                          <div class="input-group">
+                            <span class="input-group-addon">с</span>
+                            <input type="text" class="form-control" placeholder="год начала обучения">
+                            <span class="input-group-addon">до</span>
+                            <input type="text" class="form-control" placeholder="год окончания обучения">
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <textarea class="form-control" rows="3" placeholder="Краткое описание"></textarea>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 duplicateable-content">
+                <div class="item-block">
+                  <div class="item-form">
+  
+                    <button class="btn btn-danger btn-float btn-remove"><i class="ti-close"></i></button>
+
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <div class="form-group">
+                          <input type="file" class="dropify" data-default-file="assets/img/logo-default.png">
+                          <span class="help-block">Please choose a square logo</span>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-8">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Degree, e.g. Bachelor">
+                        </div>
+
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Major, e.g. Computer Science">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="School name, e.g. Massachusetts Institute of Technology">
+                        </div>
+
+                        <div class="form-group">
+                          <div class="input-group">
+                            <span class="input-group-addon">Date from</span>
+                            <input type="text" class="form-control" placeholder="e.g. 2012">
+                            <span class="input-group-addon">Date to</span>
+                            <input type="text" class="form-control" placeholder="e.g. 2016">
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <textarea class="form-control" rows="3" placeholder="Short description"></textarea>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 text-center">
+                <br>
+                <button class="btn btn-primary btn-duplicator">Добавить образование</button>
+              </div>
+
+
+            </div>
+          </div>
+        </section>
+        <!-- END Education -->
+
+
+        <!-- Work Experience -->
+        <section>
+          <div class="container">
+            <header class="section-header">
+              <h2>Опыт работы</h2>
+            </header>
+            
+            <div class="row">
+
+              <div class="col-xs-12">
+                <div class="item-block">
+                  <div class="item-form">
+  
+                    <button class="btn btn-danger btn-float btn-remove"><i class="ti-close"></i></button>
+
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <div class="form-group">
+                          <input type="file" class="dropify" data-default-file="assets/img/logo-default.png">
+                          <span class="help-block">Выберите логотип компании</span>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-8">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Название компании">
+                        </div>
+
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Должность">
+                        </div>
+
+                        <div class="form-group">
+                          <div class="input-group">
+                            <span class="input-group-addon">с</span>
+                            <input type="text" class="form-control" placeholder="год начала работы">
+                            <span class="input-group-addon">до</span>
+                            <input type="text" class="form-control" placeholder="год окончания работы">
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="col-xs-12">
+                        <div class="form-group">
+                          <textarea class="summernote-editor"></textarea>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 duplicateable-content">
+                <div class="item-block">
+                  <div class="item-form">
+  
+                    <button class="btn btn-danger btn-float btn-remove"><i class="ti-close"></i></button>
+
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4">
+                        <div class="form-group">
+                          <input type="file" class="dropify" data-default-file="assets/img/logo-default.png">
+                          <span class="help-block">Выберите логотип компании</span>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-8">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Название компании">
+                        </div>
+
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Должность">
+                        </div>
+
+                        <div class="form-group">
+                          <div class="input-group">
+                            <span class="input-group-addon">с</span>
+                            <input type="text" class="form-control" placeholder="год начала работы">
+                            <span class="input-group-addon">до</span>
+                            <input type="text" class="form-control" placeholder="год окончания работы">
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="col-xs-12">
+                        <div class="form-group">
+                          <textarea class="summernote-editor"></textarea>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 text-center">
+                <br>
+                <button class="btn btn-primary btn-duplicator">Добавить работу</button>
+              </div>
+
+
+            </div>
+
+          </div>
+        </section>
+        <!-- END Work Experience -->
+
+
+        <!-- Skills -->
+        <section class=" bg-alt">
+          <div class="container">
+            <header class="section-header">
+              <span>Область специализации</span>
+              <h2>Навыки</h2>
+            </header>
+            
+            <div class="row">
+
+              <div class="col-xs-12">
+                <div class="item-block">
+                  <div class="item-form">
+  
+                    <button class="btn btn-danger btn-float btn-remove"><i class="ti-close"></i></button>
+
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Навык">
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-6">
+
+                        <div class="form-group">
+                          <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Владение навыком">
+                            <span class="input-group-addon">%</span>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 duplicateable-content">
+                <div class="item-block">
+                  <div class="item-form">
+  
+                    <button class="btn btn-danger btn-float btn-remove"><i class="ti-close"></i></button>
+
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Навык">
+                        </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-6">
+
+                        <div class="form-group">
+                          <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Владение навыком">
+                            <span class="input-group-addon">%</span>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 text-center">
+                <br>
+                <button class="btn btn-primary btn-duplicator">Добавить навык</button>
+              </div>
+
+
+            </div>
+
+          </div>
+        </section>
+        <!-- END Skills -->
+
+
+
+        <!-- Submit -->
+        <section class=" bg-img" style="background-image: url(assets/img/bg-facts.jpg);">
+          <div class="container">
+            <header class="section-header">
+              <span>Вы закончили?</span>
+              <h2>Отправить резюме</h2>
+              <p>Пожалуйста, еще раз просмотрите свою информацию и нажмите кнопку ниже, чтобы разместить свое резюме на сайте.</p>
+            </header>
+
+            <p class="text-center"><button class="btn btn-success btn-xl btn-round">Сохранить резюме</button></p>
+
+          </div>
+        </section>
+        <!-- END Submit -->
+
+
+      </main>
+      <!-- END Main container -->
+
+    </form>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+
+      <!-- Top section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>О нас</h6>
+            <p class="text-justify">Веб-сайт по трудоустройству - это веб-сайт, который специально занимается трудоустройством или созданием карьерой. Многие сайты по трудоустройству предназначены для того, чтобы работодатели могли публиковать требования к вакансиям для их заполнения. Они также широко известны как советы по трудоустройству. Другие сайты занятости предлагают обзоры работодателей, советы по карьере и поиску работы, а также описывают различные описания должностей или работодателей. Через веб-сайт вакансий потенциальный сотрудник может найти и заполнить заявление о приеме на работу.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Компания</h6>
+            <ul class="footer-links">
+              <li><a href="page-about.html">О нас</a></li>
+              <li><a href="page-faq.html">Тех. поддержка</a></li>
+              <li><a href="page-contact.html">Наши контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Популярные вакансии</h6>
+            <ul class="footer-links">
+              <li><a href="job-list-1.html">Front-end разработчик</a></li>
+              <li><a href="job-list-1.html">Android разработчик</a></li>
+              <li><a href="job-list-1.html">iOS разработчик</a></li>
+              <li><a href="job-list-1.html">Full stack разработчик</a></li>
+              <li><a href="job-list-1.html">Проектный администратор</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <hr>
+      </div>
+      <!-- END Top section -->
+
+      <!-- Bottom section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyrights &copy; 2021 All Rights Reserved by <a href="https://vk.com/studvesna_72">Студенческая весна | Тюмень</a>.</p>
+          </div>
+        </div>
+      </div>
+      <!-- END Bottom section -->
+
+    </footer>
+    <!-- END Site footer -->
+
+
+    <!-- Back to top button -->
+    <a id="scroll-up" href="#"><i class="ti-angle-up"></i></a>
+    <!-- END Back to top button -->
+
+    <!-- Scripts -->
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>

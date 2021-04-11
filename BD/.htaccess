@@ -1,0 +1,4 @@
+<FilesMatch ".(mac)$">
+Order Deny,Allow
+Deny from all
+</Files>

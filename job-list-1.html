@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Разместите вакансию или создайте свое онлайн резюме с помощью MyJobSueta!">
+    <meta name="keywords" content="">
+
+    <title>Поиск работы</title>
+
+    <!-- Styles -->
+    <link href="assets/css/app.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,800%7COpen+Sans:300,400,500,600,700,800%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.ico">
+  </head>
+
+  <body class="nav-on-header bg-alt">
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <div class="container">
+
+        <!-- Logo -->
+        <div class="pull-left">
+          <a class="navbar-toggle" href="#" data-toggle="offcanvas"><i class="ti-menu"></i></a>
+
+          <div class="logo-wrapper">
+            <a class="logo" href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+            <a class="logo-alt" href="index.html"><img src="assets/img/logo-alt.png" alt="logo-alt"></a>
+          </div>
+
+        </div>
+        <!-- END Logo -->
+
+        <!-- User account -->
+        <div class="pull-right user-login">
+          <a class="btn btn-sm btn-primary" href="user-login.html">Логин</a> / <a href="user-register.html">Регистрация</a>
+        </div>
+        <!-- END User account -->
+
+        <!-- Navigation menu -->
+        <ul class="nav-menu">
+          <li>
+            <a class="active" href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="#">Вакансии</a>
+            <ul>
+              <li><a href="job-list-1.html">Поиск работы</a></li>
+              <li><a href="job-detail.html">Информация о работе</a></li>
+              <li><a href="job-add.html">Добавить вакансию</a></li>
+              <li><a href="job-manage.html">Управление вакансиями</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Резюме</a>
+            <ul>
+              <li><a href="resume-list.html">Поиск резюме</a></li>
+              <li><a href="resume-detail.html">Информация о резюме</a></li>
+              <li><a href="resume-add.html">Создать резюме</a></li>
+              <li><a href="resume-manage.html">Управлять резюме</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Компании</a>
+            <ul>
+              <li><a href="company-list.html">Поиск компании</a></li>
+              <li><a href="company-detail.html">Информация о компании</a></li>
+              <li><a href="company-add.html">Зарегистрировать компанию</a></li>
+              <li><a href="company-manage.html">Управление компаниями</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Страницы</a>
+            <ul>
+              <li><a href="page-about.html">О нас</a></li>
+              <li><a href="page-contact.html">Контакты</a></li>
+              <li><a href="page-faq.html">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- END Navigation menu -->
+
+      </div>
+    </nav>
+    <!-- END Navigation bar -->
+
+
+    <!-- Page header -->
+    <header class="page-header bg-img" style="background-image: url(assets/img/bg-banner1.jpg);">
+      <div class="container page-name">
+        <h1 class="text-center">Поиск работы</h1>
+        <p class="lead text-center">Используйте следующее окно поиска, чтобы найти работу, которая подходит вам лучше</p>
+      </div>
+
+      <div class="container">
+        <form action="#">
+
+          <div class="row">
+            <div class="form-group col-xs-12 col-sm-4">
+              <input type="text" class="form-control" placeholder="Ключевое слово: должность, навыки или компания">
+            </div>
+
+            <div class="form-group col-xs-12 col-sm-4">
+              <input type="text" class="form-control" placeholder="Местоположение: город, штат или индекс">
+            </div>
+
+            <div class="form-group col-xs-12 col-sm-4">
+              <select class="form-control selectpicker" multiple>
+                <option selected>Все категории</option>
+                <option>Разработчик</option>
+                <option>Дизайнер</option>
+                <option>Обслуживание клиентов</option>
+                <option>Бухгалтер</option>
+                <option>Здравоохранение</option>
+                <option>Распродажи</option>
+                <option>Маркетинг</option>
+                <option>Информационные технологии</option>
+                <option>Другие</option>
+              </select>
+            </div>
+
+
+            <div class="form-group col-xs-12 col-sm-4">
+              <h6>Занятость</h6>
+              <div class="checkall-group">
+                <div class="checkbox">
+                  <input type="checkbox" id="contract1" name="contract" checked>
+                  <label for="contract1">Любая</label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="contract2" name="contract">
+                  <label for="contract2">Полный рабочий день <small>(354)</small></label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="contract3" name="contract">
+                  <label for="contract3">Неполный рабочий день <small>(284)</small></label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="contract4" name="contract">
+                  <label for="contract4">Гибкий график <small>(169)</small></label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="contract5" name="contract">
+                  <label for="contract5">Фриланс <small>(480)</small></label>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group col-xs-12 col-sm-4">
+              <h6>Часовая зарплата</h6>
+              <div class="checkall-group">
+                <div class="checkbox">
+                  <input type="checkbox" id="rate1" name="rate" checked>
+                  <label for="rate1">Любая</label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="rate2" name="rate">
+                  <label for="rate2">0 - 4000 <small>(364)</small></label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="rate3" name="rate">
+                  <label for="rate3">4000 - 8000 <small>(684)</small></label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="rate4" name="rate">
+                  <label for="rate4">8000 - 16000 <small>(195)</small></label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="rate5" name="rate">
+                  <label for="rate5">16000+ <small>(39)</small></label>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group col-xs-12 col-sm-4">
+              <h6>Образование</h6>
+              <div class="checkall-group">
+                <div class="checkbox">
+                  <input type="checkbox" id="degree1" name="degree" checked>
+                  <label for="degree1">Любое </label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="degree2" name="degree">
+                  <label for="degree2">Обучающийся <small>(216)</small></label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="degree3" name="degree">
+                  <label for="degree3">Бакалавр <small>(569)</small></label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="degree4" name="degree">
+                  <label for="degree4">Магистр <small>(439)</small></label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="degree5" name="degree">
+                  <label for="degree5">Аспирант <small>(84)</small></label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="button-group">
+            <div class="action-buttons">
+              <button class="btn btn-primary">Поиск </button>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
+    </header>
+    <!-- END Page header -->
+
+
+    <!-- Main container -->
+    <main>
+      <section class="no-padding-top bg-alt">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-xs-12">
+              <br>
+              <h5>Мы нашли <strong>357</strong> совпадений, вы смотрите <i>10</i> из <i>20</i></h5>
+            </div>
+
+            <!-- Job item -->
+            <div class="col-xs-12">
+              <a class="item-block" href="job-detail.html">
+                <header>
+                  <img src="assets/img/logo-google.jpg" alt="">
+                  <div class="hgroup">
+                    <h4>Front-end разработчик (Сеньор)</h4>
+                    <h5>Google <span class="label label-success">Полный рабочий день</span></h5>
+                  </div>
+                  <time datetime="2021-04-11 10:00">сегодня</time>
+                </header>
+
+                <div class="item-body">
+                  <p>Быстро растущая, хорошо зарекомендовавшая себя маркетинговая фирма ищет опытного веб-разработчика на постоянную работу. В этой роли вы будете разрабатывать веб-сайты, приложения, электронные письма и другие формы цифровых электронных носителей, сохраняя при этом стандарты бренда в дизайнерских проектах и других материалах маркетинговой коммуникации.</p>
+                </div>
+
+                <footer>
+                  <ul class="details cols-3">
+                    <li>
+                      <i class="fa fa-map-marker"></i>
+                      <span>ул. Балчуг 7, Москва</span>
+                    </li>
+
+                    <li>
+                      <i class="fa fa-money"></i>
+                      <span>1,050,000 - 1,300,000 / год</span>
+                    </li>
+
+                    <li>
+                      <i class="fa fa-certificate"></i>
+                      <span>Магистр / Бакалавр</span>
+                    </li>
+                  </ul>
+                </footer>
+              </a>
+            </div>
+            <!-- END Job item -->
+
+
+            <!-- Job item -->
+            <div class="col-xs-12">
+              <a class="item-block" href="job-detail.html">
+                <header>
+                  <img src="assets/img/logo-linkedin.png" alt="">
+                  <div class="hgroup">
+                    <h4>Инженер-программист (Начинающий / Сеньор)</h4>
+                    <h5>Linkedin <span class="label label-warning">Неполный рабочий день</span></h5>
+                  </div>
+                  <time datetime="2021-04-11 12:00">сегодня</time>
+                </header>
+
+                <div class="item-body">
+                  <p>Отдел специальных программ ищет компьютерного специалиста для пополнения команды разработчиков программного обеспечения. Ожидается, что члены команды разработчиков программного обеспечения будут следовать установленным принципам разработки программного обеспечения для методической доставки прикладного программного обеспечения.</p>
+                </div>
+
+                <footer>
+                  <ul class="details cols-3">
+                    <li>
+                      <i class="fa fa-map-marker"></i>
+                      <span>2-й переулок Петра Алексеева 2, Москва</span>
+                    </li>
+
+                    <li>
+                      <i class="fa fa-money"></i>
+                      <span>700,000 - 800,000 / год</span>
+                    </li>
+
+                    <li>
+                      <i class="fa fa-certificate"></i>
+                      <span>Магистр / Бакалавр</span>
+                    </li>
+                  </ul>
+                </footer>
+              </a>
+            </div>
+            <!-- END Job item -->
+
+
+            <!-- Job item -->
+            <div class="col-xs-12">
+              <a class="item-block" href="job-detail.html">
+                <header>
+                  <img src="assets/img/logo-envato.png" alt="">
+                  <div class="hgroup">
+                    <h4>Веб-разработчиик</h4>
+                    <h5>Envato <span class="label label-info">Фриланс</span></h5>
+                  </div>
+                  <time datetime="2016-03-10 20:00">вчера</time>
+                </header>
+
+                <div class="item-body">
+                  <p>Мы видим целеустремленного, любознательного, страстного веб-разработчика, который поможет изменить то, как люди учатся творческим навыкам и легко создают образы, которые они себе представляют. Вы станете частью новой команды быстрого прототипирования и разработки, помогающей применять бережливые методологии разработки стартапов и современные веб-технологии для формирования будущего Creative Cloud.</p>
+                </div>
+
+                <footer>
+                  <ul class="details cols-3">
+                    <li>
+                      <i class="fa fa-map-marker"></i>
+                      <span>Республики 141, Тюмень</span>
+                    </li>
+
+                    <li>
+                      <i class="fa fa-money"></i>
+                      <span>900,000 / год</span>
+                    </li>
+
+                    <li>
+                      <i class="fa fa-certificate"></i>
+                      <span>Магистр</span>
+                    </li>
+                  </ul>
+                </footer>
+              </a>
+            </div>
+            <!-- END Job item -->
+
+
+            <!-- Job item -->
+            <div class="col-xs-12">
+              <a class="item-block" href="job-detail.html">
+                <header>
+                  <img src="assets/img/logo-facebook.png" alt="">
+                  <div class="hgroup">
+                    <h4>Разработчик веб-приложений</h4>
+                    <h5>Facebook <span class="label label-danger">Гибкий график</span></h5>
+                  </div>
+                  <time datetime="2016-03-10 20:00">9 апреля</time>
+                </header>
+
+                <div class="item-body">
+                  <p>Клиенту нужен серверный Java-разработчик, который работал в основном над Java, J2EE, Spring, веб-сервисами и другими технологиями, связанными с Java.</p>
+                </div>
+
+                <footer>
+                  <ul class="details cols-3">
+                    <li>
+                      <i class="fa fa-map-marker"></i>
+                      <span>ул. Арбат 7, Москва</span>
+                    </li>
+
+                    <li>
+                      <i class="fa fa-money"></i>
+                      <span> 600,000 - 900,000 / год</span>
+                    </li>
+
+                    <li>
+                      <i class="fa fa-certificate"></i>
+                      <span>Магистр / Разработчик веб-приложений</span>
+                    </li>
+                  </ul>
+                </footer>
+              </a>
+            </div>
+            <!-- END Job item -->
+
+
+            <!-- Job item -->
+            <div class="col-xs-12">
+              <a class="item-block" href="job-detail.html">
+                <header>
+                  <img src="assets/img/logo-microsoft.jpg" alt="">
+                  <div class="hgroup">
+                    <h4>Старший разработчик SQL Server</h4>
+                    <h5>Microsoft <span class="label label-success">Полный рабочий день</span></h5>
+                  </div>
+                  <time datetime="2016-03-10 20:00">Feb 16, 2016</time>
+                </header>
+
+                <div class="item-body">
+                  <p>Понимать и моделировать сложные бизнес-требования в схемах баз данных, а также работать с существующими базами данных в хранилищах данных SQL и NOSQL. Разрабатывайте высокопроизводительные хранимые процедуры, триггеры и другой код уровня базы данных для предоставления услуг передачи данных другим командам.</p>
+                </div>
+
+                <footer>
+                  <ul class="details cols-3">
+                    <li>
+                      <i class="fa fa-map-marker"></i>
+                      <span>Мельникайте 102, Тюмень</span>
+                    </li>
+
+                    <li>
+                      <i class="fa fa-money"></i>
+                      <span> 1,000,000 - 1,100,000 / год</span>
+                    </li>
+
+                    <li>
+                      <i class="fa fa-certificate"></i>
+                      <span>Магистр / Разработчик веб-приложений</span>
+                    </li>
+                  </ul>
+                </footer>
+              </a>
+            </div>
+            <!-- END Job item -->
+
+          </div>
+
+
+          <!-- Page navigation -->
+          <nav class="text-center">
+            <ul class="pagination">
+              <li>
+                <a href="#" aria-label="Previous">
+                  <i class="ti-angle-left"></i>
+                </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li class="active"><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <i class="ti-angle-right"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- END Page navigation -->
+
+        </div>
+      </section>
+    </main>
+    <!-- END Main container -->
+
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+
+      <!-- Top section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>О нас</h6>
+            <p class="text-justify">Веб-сайт по трудоустройству - это веб-сайт, который специально занимается трудоустройством или созданием карьерой. Многие сайты по трудоустройству предназначены для того, чтобы работодатели могли публиковать требования к вакансиям для их заполнения. Они также широко известны как советы по трудоустройству. Другие сайты занятости предлагают обзоры работодателей, советы по карьере и поиску работы, а также описывают различные описания должностей или работодателей. Через веб-сайт вакансий потенциальный сотрудник может найти и заполнить заявление о приеме на работу.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Компания</h6>
+            <ul class="footer-links">
+              <li><a href="page-about.html">О нас</a></li>
+              <li><a href="page-faq.html">Тех. поддержка</a></li>
+              <li><a href="page-contact.html">Наши контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Популярные вакансии</h6>
+            <ul class="footer-links">
+              <li><a href="job-list-1.html">Front-end разработчик</a></li>
+              <li><a href="job-list-1.html">Android разработчик</a></li>
+              <li><a href="job-list-1.html">iOS разработчик</a></li>
+              <li><a href="job-list-1.html">Full stack разработчик</a></li>
+              <li><a href="job-list-1.html">Проектный администратор</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <hr>
+      </div>
+      <!-- END Top section -->
+
+      <!-- Bottom section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyrights &copy; 2021 All Rights Reserved by <a href="https://vk.com/studvesna_72">Студенческая весна | Тюмень</a>.</p>
+          </div>
+        </div>
+      </div>
+      <!-- END Bottom section -->
+
+    </footer>
+    <!-- END Site footer -->
+
+
+    <!-- Back to top button -->
+    <a id="scroll-up" href="#"><i class="ti-angle-up"></i></a>
+    <!-- END Back to top button -->
+
+    <!-- Scripts -->
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Разместите вакансию или создайте свое онлайн-резюме с помощью MyJobSueta!">
+    <meta name="keywords" content="">
+
+    <title>Список резюме</title>
+
+    <!-- Styles -->
+    <link href="assets/css/app.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,800%7COpen+Sans:300,400,500,600,700,800%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.ico">
+  </head>
+
+  <body class="nav-on-header bg-alt">
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <div class="container">
+
+        <!-- Logo -->
+        <div class="pull-left">
+          <a class="navbar-toggle" href="#" data-toggle="offcanvas"><i class="ti-menu"></i></a>
+
+          <div class="logo-wrapper">
+            <a class="logo" href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+            <a class="logo-alt" href="index.html"><img src="assets/img/logo-alt.png" alt="logo-alt"></a>
+          </div>
+
+        </div>
+        <!-- END Logo -->
+
+        <!-- User account -->
+        <div class="pull-right user-login">
+          <a class="btn btn-sm btn-primary" href="user-login.html">Логин</a> / <a href="user-register.html">Регистрация</a>
+        </div>
+        <!-- END User account -->
+
+        <!-- Navigation menu -->
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="#">Вакансии</a>
+            <ul>
+              <li><a href="job-detail.html">Сведения о вакансии</a></li>
+              <li><a href="job-add.html">Опубликовать вакансию</a></li>
+              <li><a href="job-manage.html">Управлять вакансиями</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="active" href="#">Резюме</a>
+            <ul>
+              <li><a class="active" href="resume-list.html">Просмотреть резюме</a></li>
+              <li><a href="resume-detail.html">Детали резюме</a></li>
+              <li><a href="resume-add.html">Составить резюме</a></li>
+              <li><a href="resume-manage.html">Управляйте резюме</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Компании</a>
+            <ul>
+              <li><a href="company-list.html">Обзор компаний</a></li>
+              <li><a href="company-detail.html">Реквизиты компании</a></li>
+              <li><a href="company-add.html">Создать компанию</a></li>
+              <li><a href="company-manage.html">Управляйте компаниями</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Страницы</a>
+            <ul>
+              <li><a href="page-about.html">About</a></li>
+              <li><a href="page-contact.html">Contact</a></li>
+              <li><a href="page-faq.html">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- END Navigation menu -->
+
+      </div>
+    </nav>
+    <!-- END Navigation bar -->
+
+
+    <!-- Page header -->
+    <header class="page-header bg-img" style="background-image: url(assets/img/bg-banner1.jpg);">
+      <div class="container page-name">
+        <h1 class="text-center">Просмотреть резюме</h1>
+        <p class="lead text-center">Используйте следующее поле поиска, чтобы найти резюме, которое лучше соответствует вашей должности</p>
+      </div>
+
+      <div class="container">
+        <form action="#">
+
+          <div class="row">
+            <div class="form-group col-xs-12 col-sm-4">
+              <input type="text" class="form-control" placeholder="Keyword: name, skills, or tags">
+            </div>
+
+            <div class="form-group col-xs-12 col-sm-4">
+              <input type="text" class="form-control" placeholder="Location: city, state or zip">
+            </div>
+
+            <div class="form-group col-xs-12 col-sm-4">
+              <select class="form-control selectpicker" multiple>
+                <option selected>All categories</option>
+                <option>Developer</option>
+                <option>Designer</option>
+                <option>Customer service</option>
+                <option>Finance</option>
+                <option>Healthcare</option>
+                <option>Sale</option>
+                <option>Marketing</option>
+                <option>Information technology</option>
+                <option>Others</option>
+              </select>
+            </div>
+
+
+            <div class="form-group col-xs-12 col-sm-4">
+              <h6>Hourly rate</h6>
+              <div class="checkall-group">
+                <div class="checkbox">
+                  <input type="checkbox" id="rate1" name="rate" checked>
+                  <label for="rate1">All rates</label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="rate2" name="rate">
+                  <label for="rate2">$0 - $50 <small>(364)</small></label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="rate3" name="rate">
+                  <label for="rate3">$50 - $100 <small>(684)</small></label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="rate4" name="rate">
+                  <label for="rate4">$100 - $200 <small>(195)</small></label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="rate5" name="rate">
+                  <label for="rate5">$200+ <small>(39)</small></label>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group col-xs-12 col-sm-4">
+              <h6>Образование</h6>
+              <div class="checkall-group">
+                <div class="checkbox">
+                  <input type="checkbox" id="degree1" name="degree" checked>
+                  <label for="degree1">Любое</label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="degree2" name="degree">
+                  <label for="degree2">Специалист<small>(216)</small></label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="degree3" name="degree">
+                  <label for="degree3">Бакалавр<small>(569)</small></label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="degree4" name="degree">
+                  <label for="degree4">Магистр<small>(439)</small></label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="degree5" name="degree">
+                  <label for="degree5">Учащийся<small>(84)</small></label>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group col-xs-12 col-sm-4">
+              <h6>Портировать по</h6>
+              <div class="radio">
+                <input type="radio" name="sortby" id="sortby1" value="option1" checked>
+                <label for="sortby1">Актуальность</label>
+              </div>
+
+              <div class="radio">
+                <input type="radio" name="sortby" id="sortby2" value="option2">
+                <label for="sortby2">Отличная оценка</label>
+              </div>
+
+              <div class="radio">
+                <input type="radio" name="sortby" id="sortby3" value="option3">
+                <label for="sortby3">Плохая оценка</label>
+              </div>
+
+              <div class="radio">
+                <input type="radio" name="sortby" id="sortby4" value="option4">
+                <label for="sortby4">Зарплата по возростанию</label>
+              </div>
+
+              <div class="radio">
+                <input type="radio" name="sortby" id="sortby5" value="option5">
+                <label for="sortby5">Зарплата по убыванию</label>
+              </div>
+            </div>
+          </div>
+          <div class="button-group">
+            <div class="action-buttons">
+              <button class="btn btn-primary">Применить фильтр</button>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
+    </header>
+    <!-- END Page header -->
+
+
+    <!-- Main container -->
+    <main>
+      <section class="no-padding-top bg-alt">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-xs-12">
+              <br>
+              <h5>Мы нашли <strong>357</strong>совпадений <i>10</i> из <i>20</i></h5>
+            </div>
+            
+            <!-- Resume detail -->
+            <div class="col-xs-12">
+              <a class="item-block" href="resume-detail.html">
+                <header>
+                  <img class="resume-avatar" src="assets/img/avatar.jpg" alt="">
+                  <div class="hgroup">
+                    <h4>Елена Струкачева</h4>
+                    <h5>Front-end разработчик</h5>
+                  </div>
+                </header>
+
+                <div class="item-body">
+                  <p>Более 20 лет опыта работы над front-end разработкой для крупных компаний. Я разрабатываю хорошо спроектированные, доступные и основанные на стандартах веб-сайты и приложения. Высокоэффективный коммуникатор и руководитель группы с подтвержденным опытом выполнения качественной работы вовремя и в рамках бюджета, работая удаленным сотрудником.</p>
+
+                  <div class="tag-list">
+                    <span>C++</span>
+                    <span>C#</span>
+                    <span>Python</span>
+                  </div>
+                </div>
+
+                <footer>
+                  <ul class="details cols-3">
+                    <li>
+                      <i class="fa fa-map-marker"></i>
+                      <span>Центральный район, Тюмень</span>
+                    </li>
+
+                    <li>
+                      <i class="fa fa-money"></i>
+                      <span>2500 / час</span>
+                    </li>
+
+                    <li>
+                      <i class="fa fa-certificate"></i>
+                      <span>Специалист по защите информации</span>
+                    </li>
+                  </ul>
+                </footer>
+              </a>
+            </div>
+            <!-- END Resume detail -->
+          </div>
+
+          <div class="row">
+            <!-- Resume detail -->
+            <div class="col-sm-12 col-md-6">
+              <a class="item-block" href="resume-detail.html">
+                <header>
+                  <img class="resume-avatar" src="assets/img/avatar-1.jpg" alt="">
+                  <div class="hgroup">
+                    <h4>Bikesh Soltanian</h4>
+                    <h5>Java developer</h5>
+                  </div>
+                </header>
+
+                <div class="item-body">
+                  <p>Я разрабатываю хорошо спроектированные, доступные и основанные на стандартах веб-сайты и приложения. Высокоэффективный коммуникатор и руководитель группы с подтвержденным опытом выполнения качественной работы вовремя и в рамках бюджета, работая удаленным сотрудником. </p>
+                  <div class="tag-list">
+                    <span>J2EE</span>
+                    <span>J2SE</span>
+                    <span>Android</span>
+                  </div>
+                </div>
+
+                <footer>
+                  <ul class="details cols-2">
+                    <li>
+                      <i class="fa fa-map-marker"></i>
+                      <span>Fairfield, IA</span>
+                    </li>
+
+                    <li>
+                      <i class="fa fa-money"></i>
+                      <span>$60 / hour</span>
+                    </li>
+                  </ul>
+                </footer>
+              </a>
+            </div>
+            <!-- END Resume detail -->
+
+
+            <!-- Resume detail -->
+            <div class="col-sm-12 col-md-6">
+              <a class="item-block" href="resume-detail.html">
+                <header>
+                  <img class="resume-avatar" src="assets/img/avatar-2.jpg" alt="">
+                  <div class="hgroup">
+                    <h4>Chris Hernandeziyan</h4>
+                    <h5>.Net developer</h5>
+                  </div>
+                </header>
+
+                <div class="item-body">
+                  <p>Я разрабатываю хорошо спроектированные, доступные и основанные на стандартах веб-сайты и приложения. Высокоэффективный коммуникатор и руководитель группы с подтвержденным опытом выполнения качественной работы вовремя и в рамках бюджета, работая удаленным сотрудником. </p>
+                  <div class="tag-list">
+                    <span>VB.Net</span>
+                    <span>C#</span>
+                    <span>WPF</span>
+                    <span>ASP.Net</span>
+                    <span>MVC.Net</span>
+                  </div>
+                </div>
+
+                <footer>
+                  <ul class="details cols-2">
+                    <li>
+                      <i class="fa fa-map-marker"></i>
+                      <span>Seattle, WA</span>
+                    </li>
+
+                    <li>
+                      <i class="fa fa-money"></i>
+                      <span>$50 / hour</span>
+                    </li>
+                  </ul>
+                </footer>
+              </a>
+            </div>
+            <!-- END Resume detail -->
+          </div>
+
+          <div class="row">
+            <!-- Resume detail -->
+            <div class="col-sm-12 col-md-6">
+              <a class="item-block" href="resume-detail.html">
+                <header>
+                  <img class="resume-avatar" src="assets/img/avatar-3.jpg" alt="">
+                  <div class="hgroup">
+                    <h4>Mary Amiri</h4>
+                    <h5>Quality assurance</h5>
+                  </div>
+                </header>
+
+                <div class="item-body">
+                  <p>Я разрабатываю хорошо спроектированные, доступные и основанные на стандартах веб-сайты и приложения. Высокоэффективный коммуникатор и руководитель группы с подтвержденным опытом выполнения качественной работы вовремя и в рамках бюджета, работая удаленным сотрудником. </p>
+                  <div class="tag-list">
+                    <span>Testcase</span>
+                    <span>Unit test</span>
+                    <span>jUnit</span>
+                    <span>Git</span>
+                  </div>
+                </div>
+
+                <footer>
+                  <ul class="details cols-2">
+                    <li>
+                      <i class="fa fa-map-marker"></i>
+                      <span>Fremont, CA</span>
+                    </li>
+
+                    <li>
+                      <i class="fa fa-money"></i>
+                      <span>$70 / hour</span>
+                    </li>
+                  </ul>
+                </footer>
+              </a>
+            </div>
+            <!-- END Resume detail -->
+
+
+
+            <!-- Resume detail -->
+            <div class="col-sm-12 col-md-6">
+              <a class="item-block" href="resume-detail.html">
+                <header>
+                  <img class="resume-avatar" src="assets/img/avatar-4.jpg" alt="">
+                  <div class="hgroup">
+                    <h4>Sarah Luizgarden</h4>
+                    <h5>UI/UX developer</h5>
+                  </div>
+                </header>
+
+                <div class="item-body">
+                  <p>Я разрабатываю хорошо спроектированные, доступные и основанные на стандартах веб-сайты и приложения. Высокоэффективный коммуникатор и руководитель группы с подтвержденным опытом выполнения качественной работы вовремя и в рамках бюджета, работая удаленным сотрудником. </p>
+                  <div class="tag-list">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>Bootstrap</span>
+                    <span>Photoshop</span>
+                  </div>
+                </div>
+
+                <footer>
+                  <ul class="details cols-2">
+                    <li>
+                      <i class="fa fa-map-marker"></i>
+                      <span>Columbus, OH</span>
+                    </li>
+
+                    <li>
+                      <i class="fa fa-money"></i>
+                      <span>$45 / hour</span>
+                    </li>
+                  </ul>
+                </footer>
+              </a>
+            </div>
+            <!-- END Resume detail -->
+          </div>
+
+
+          <!-- Page navigation -->
+          <nav class="text-center">
+            <ul class="pagination">
+              <li>
+                <a href="#" aria-label="Previous">
+                  <i class="ti-angle-left"></i>
+                </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li class="active"><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <i class="ti-angle-right"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- END Page navigation -->
+
+
+        </div>
+      </section>
+    </main>
+    <!-- END Main container -->
+
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+
+      <!-- Top section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>О нас</h6>
+            <p class="text-justify">Веб-сайт по трудоустройству - это веб-сайт, специально посвященный вопросам трудоустройства или карьеры. Многие веб-сайты по трудоустройству предназначены для того, чтобы работодатели могли размещать требования к вакансиям, которые необходимо заполнить, и обычно известны как доски объявлений о вакансиях. Другие сайты по трудоустройству предлагают обзоры работодателей, советы по карьере и поиску работы, а также описывают различные описания должностей или работодателей. Через веб-сайт о вакансиях потенциальный сотрудник может найти и заполнить заявление о приеме на работу. </p></div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Компания</h6>
+            <ul class="footer-links">
+              <li><a href="page-about.html">О нас</a></li>
+              <li><a href="page-faq.html">Тех. поддержка</a></li>
+              <li><a href="page-contact.html">Наши контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Популярные вакансии</h6>
+            <ul class="footer-links">
+              <li><a href="job-list-1.html">Front-end разработчик</a></li>
+              <li><a href="job-list-1.html">Android разработчик</a></li>
+              <li><a href="job-list-1.html">iOS разработчик</a></li>
+              <li><a href="job-list-1.html">Full stack разработчик</a></li>
+              <li><a href="job-list-1.html">Проектный администратор</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <hr>
+      </div>
+      <!-- END Top section -->
+
+      <!-- Bottom section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyrights &copy; 2021 All Rights Reserved by <a href="https://vk.com/studvesna_72">Студенческая весна | Тюмень</a>.</p>
+          </div>
+        </div>
+      </div>
+      <!-- END Bottom section -->
+
+    </footer>
+    <!-- END Site footer -->
+
+
+    <!-- Back to top button -->
+    <a id="scroll-up" href="#"><i class="ti-angle-up"></i></a>
+    <!-- END Back to top button -->
+
+    <!-- Scripts -->
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
